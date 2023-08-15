@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload="slider()">
+    <div class="banner">
+
+        <div class="slider">
+           
+        </div>
+
+        <div class="overlay">
+            <div class="text">
+            <h1>Smart <span>Agro</span></h1>
+            <p>Smart Agro is an Initiative for the research, development and growth of agricultural industires</p>
+        </div>
+        </div>
+        
+    </div>
+    
+<script>
+   const body = document.querySelector('body');
+   const text = document.querySelector('slider');
+   let count = 2,
+   text_count=1;
+   setInterval(()=> {
+    if (count>2) count = 1;
+    body.slider= `url (images/${count}.jpg)`;
+    count++;
+
+   }, 5000 )
+
+</script>
+
+</body>
+</html>
